@@ -4,7 +4,7 @@ Tools that allow to get informations (Hostname, IP Address, Status) on a docker 
 
 ## How to use : 
 ```
-./containerinfo2 containername
+./containerinfo containername
 ```
 
 If you launch without containername, the script will be stopped with an exit code.
