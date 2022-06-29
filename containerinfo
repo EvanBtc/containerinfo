@@ -1,0 +1,5 @@
+#!/bin/bash
+
+read -p "Nom du conteneur: " conteneur
+
+docker inspect $conteneur | jq '.[0] | {"Hostname" : .Config.Hostname, "IP" : .NetworkSettings.Networks.bridge.IPAddress,"Status": .State.Status }'
